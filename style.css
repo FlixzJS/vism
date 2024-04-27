@@ -1,13 +1,13 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:url(pexels-jplenio-1118869.jpg);
+    background:url(!\ lightning.jpg);
     background-size: cover;
 }
 
 nav{
     box-sizing: border-box;
-    border: 2px solid rgb(0, 47, 255);
-    background-color: #fff;
+    border: 2px solid rgb(183, 0, 255);
+    background-color: #ffffff;
     position: fixed;
     display: flex;
     top: 0;
@@ -23,8 +23,7 @@ nav h2{
 }
 
 nav h2 span{
-    font-style: italic;
-    color:  rgb(0, 47, 255);
+    color:  rgb(78, 84, 110);
 }
 
 nav ul{
@@ -53,27 +52,74 @@ nav ul li a:hover{
 
 }
 
-nav .btn{
-    color:#000;
-    text-decoration: none;
-    margin-right:  25px;
-    padding: 10px;
-    box-sizing: border-box;
-    padding: 12px;
-    background-color:rgb(0, 47, 255);
+
+
+
+
+nav .btn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
 }
 
-.content h1{
-    position:absolute;
-    margin-top: 17%;
-    margin-left: 5%;
-    color: #fff;
-    font-style: 50px;
-    font-size: 50px;
-    text-align: center;
+nav .btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
-.content span{
-    color: #000;
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 
+nav .btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
