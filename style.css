@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:url(!\ lightning.jpg);
+    background:url(thunder.mp4);
     background-size: cover;
 }
 
@@ -122,4 +122,27 @@ nav .btn:after {
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media(min-aspect-ration: 16/9) {
+  .back-video{
+    width: 100%;
+    height:auto;
+
+  }
+}
+
+@media(min-aspect-ration: 16/9) {
+  .back-video{
+    width: auto;
+    height:100%;
+    
+  }
 }
