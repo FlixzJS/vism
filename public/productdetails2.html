@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project Vism | Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="vismlogo.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="shop.html">Products</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                    <a href="cart.html"><img src="cart.png"  width="30px" height="30px"></a> 
+
+                </ul>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="shirt2.png" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="shirt2.png" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="shirt2-back.png" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="shirt2-back.png" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="shirt2-back.png" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Shirt</p>
+                <h1>Clean, flower shirt to get you looking fresh.</h1>
+                <h4>$30.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>X-Large</option>
+                </select>
+                <input type="number" value="1" max="4"> 
+                <a href="" class="btn1">Add to Cart <span class="material-symbols-outlined">shopping_cart</span></a>
+
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Add this to your closet and expand your shirt game</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+        <div class="row">
+            <div class="col-4" id="shirt2">
+                <img src="hoodie1.png">
+                <h4>"Keep it simple ⚡"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$40.00</p>
+
+            </div>
+            <div class="col-4" id="shirt2">
+                <br><bn><img src="shirt1.png"><br><br>
+                <h4>"Play your cards right 🃏"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$30.00</p>
+                
+            </div>
+            <div class="col-4" id="hat">
+                <br><br><img src="hat.png">
+                <h4>"Bad hair day? We got you covered 🤠"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$40.00</p>
+                
+            </div>
+            <div class="col-4" id="phone-case">
+                <br><br><img src="phone-case.png">
+                <h4>"Protect your phone while keeping it looking fresh 📱"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+    </div>
+    
+    <a href="#" class="back-to-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onclick = function(){
+                {
+                ProductImg.src = SmallImg[0].src;
+                }
+    
+            }
+            SmallImg[1].onclick = function(){
+                {
+                ProductImg.src = SmallImg[1].src;
+                }
+        
+    
+            }
+            SmallImg[2].onclick = function(){
+                {
+                ProductImg.src = SmallImg[2].src;
+                }
+        
+    
+            }
+
+            SmallImg[3].onclick = function(){
+                {
+                ProductImg.src = SmallImg[3].src;
+                }
+        
+    
+            }
+    </script>
+
+</body>
+</html>
